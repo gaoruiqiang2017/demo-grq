@@ -19,9 +19,9 @@ public class Hello {
 
         @ResponseBody
         @RequestMapping("/hello")
-        public String hello(){
+        public int hello(){
         //测试
-        return "templates/index.jsp";
-    }
+        return 1;
+}
 
 }
