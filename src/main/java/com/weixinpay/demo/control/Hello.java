@@ -2,7 +2,6 @@ package com.weixinpay.demo.control;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @Author gaoruiqiang
@@ -17,11 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class Hello {
 
-        @ResponseBody
-        @RequestMapping("/hello")
-        public int hello(){
-        //测试
-        return 1;
-}
-
+    @RequestMapping(value = "/login")
+    public String hello() {
+        return "login";
+    }
 }
